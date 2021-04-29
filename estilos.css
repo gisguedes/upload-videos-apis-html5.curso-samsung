@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: rgb(155, 60, 60);
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+
+  max-width: 600px;
+  background-color: rgb(213, 155, 80);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.subir_Archivo {
+  padding: 10%;
+}
+
+.butones_text {
+  border:rgb(155, 60, 60);
+  border-radius: 8px; 
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /*para separar el texto del buton*/
+  width: 70%;
+  
+}
+
+.container_file {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.butones_navegacion, .form__file-btn {
+  color: rgb(255, 255, 255); 
+  font-size: 14px; 
+  line-height: 14px; 
+  padding: 11px; 
+  border-radius: 8px; 
+  font-weight: normal; 
+  text-decoration: none; 
+  text-align: center;
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background-image: linear-gradient(to right, rgb(155, 60, 60) 0%, rgb(155, 60, 60) 0%, rgb(155, 60, 60) 0%); 
+  box-shadow: rgb(155, 60, 60) 0px 0px 33px 3px; 
+  border: none; 
+  display: inline-block;
+}
+
+  .butones_navegacion:hover, .form__file-btn:hover {
+  background: rgb(160, 19, 19); 
+}
+
+  .butones_navegacion:active, .form__file-btn:active {
+  background: rgb(90, 23, 23); 
+}
+
+.form__file-btn {
+  display: block;
+  cursor: pointer;
+}
+
+.form__file {
+  display: none;
+}

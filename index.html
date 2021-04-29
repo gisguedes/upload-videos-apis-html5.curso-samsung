@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácitca API's de HTML5</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <h1 id="form_title">Upload de videos</h1>
+        <div class="container_file">
+
+            <!-- FINISH: input para copiar el nombre del archivo y quedar bonito en pantalla -->
+            <input type="text" id="nombre_Archivo" placeholder="Buscar archivo" class="butones_text" readonly> &nbsp; &nbsp;
+
+            <!--FINISH: label para personalizar el input type file-->
+            <label for="subir_Archivo" class="form__file-btn"> &#128193; &nbsp; Subir vídeo &nbsp; </label>
+
+            <!--FINISH: para subir archivo-->
+            <input type="file" id="subir_Archivo" class="form__file" accept="video/*" onchange="return crear_Archivo()"> 
+        </div>
+
+        <!--FINISH: Para mostrar archivo por pantalla-->
+        <div id="visualizar_Archivo" class="container_file"></div>
+        
+        <!--FINISH: butones para manejar video -->
+        <button class="butones_navegacion" onclick="reproducir()">&#9205; &nbsp; Play</button> &nbsp;
+        <button class="butones_navegacion" onclick="pausar()"> &#x23f8; &nbsp; Pause</button> &nbsp;
+        <button class="butones_navegacion" onclick="subirVolumen()">&#128266; &nbsp; Subir Volumen</button> &nbsp;
+        <button class="butones_navegacion" onclick="bajarVolumen()">&#128265; &nbsp; Bajar Volumen</button>
+    </main>
+
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
